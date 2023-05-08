@@ -1,0 +1,46 @@
+<div class="settings-wrapper">
+    <div class="page-heading">
+        Settings
+    </div>
+    <div class="input-section">
+        <form class="input-section-form" id="mainForm" method="POST"
+            [formGroup]="configForm">
+            <label for="floatingInput" class="vertical-center">Environment</label>
+            <select name="environment" class="env-list"
+                formControlName="environment">
+                <option value="{{environments[0]}}" selected>{{environments[0]}}</option>
+                <option *ngFor="let env of environments" value={{env}}>{{env}}</option>
+            </select>
+            <label for="floatingInput" class="vertical-center">Username</label>
+            <input type="text" class="form-control-plaintext"
+                formControlName="username"
+                id="settings_email" name="username" placeholder="username">
+            <label for="floatingInput" class="vertical-center">Password</label>
+            <input type="password" class="form-control-plaintext"
+                formControlName="password"
+                id="settings_password" name="password" placeholder="Password">
+            <!-- <button class="submit-button center" type="submit"
+                (click)="onSave()">Save</button> -->
+            <app-primary-button [text]="'Save'" (click)="onSave()"
+                class="submit-button"></app-primary-button>
+        </form>
+    </div>
+    <hr/>
+        <div class="page-sub-heading"> Summary </div>
+        <div class="summaryTable">
+            <table class="table table-bordered" *ngIf="hasConfig">
+                <thead>
+                    <tr class="table-active">
+                        <th> Environment</th>
+                        <th> Username</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> {{config.get('environment')}}</td>
+                        <td> {{config.get('username')}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>

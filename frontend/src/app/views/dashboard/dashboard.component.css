@@ -1,0 +1,6 @@
+.dashboard-tiles-wrapper {
+    margin: 50px 100px;
+    display: grid !important;
+    grid-template-columns: repeat(5, 250px);
+    column-gap: 30px;
+}

@@ -1,0 +1,8 @@
+/* Styles for long footer */
+
+.footer {
+    height: 100%;
+    color: var(--text-color-secondary);
+    text-align: center;
+    padding-top: 8px;
+}

@@ -1,0 +1,101 @@
+:host {
+    padding: 0;
+    margin: 0;
+}
+
+.settings-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* row-gap: 10px; */
+    margin-top: 20px;
+    width: 70%;
+    margin: auto;
+}
+
+.settings-wrapper .page-heading {
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+    /* margin-bottom: 20px; */
+    text-transform: capitalize;
+    background: var(--text-color-secondary);
+    color: orange;
+    border: 1px solid var(--primary-border);
+}
+
+
+.settings-wrapper .input-section .input-section-form {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    column-gap: 10px;
+    row-gap: 20px;
+    padding: 30px 50px;
+    background: var(--text-color-secondary);
+    border: 1px solid var(--primary-border);
+}
+
+.settings-wrapper .input-section #settings_email,
+.settings-wrapper .input-section #settings_password {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #666;
+    font-size: 18px;
+}
+
+.settings-wrapper .env-list {
+    width: 200px;
+    background-color: #fff;
+    appearance: none;
+    padding: 8px;
+    background: transparent;
+    -webkit-appearance: none;
+    border: 1px solid #ccc;
+
+}
+
+.settings-wrapper .select-selected {
+    background-color: DodgerBlue;
+}
+
+.settings-wrapper .env-list select {
+    display: none;
+    background-color: var(--primary-color)
+}
+
+.settings-wrapper .page-heading {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.settings-wrapper .input-section .input-section-form .submit-button {
+    /* 
+    background: var(--primary-color);
+    color: var(--text-color-secondary);
+    border-radius: 1px;
+
+    border-radius: 2px;
+    font-size: 18px; */
+    width: 200px;
+    margin: auto;
+    /* border: 1px solid var(--primary-color-dark) !important; */
+    grid-column: 2 span;
+}
+
+
+.summaryTable {
+    padding: 30px 20px;
+    background: var(--text-color-secondary);
+    border: 1px solid var(--primary-border);
+}
+
+.page-sub-heading {
+    font-size: 20px;
+    padding: 10px;
+}
+
+hr {
+    margin-top: 50px;
+    border: 1px dashed rgba(0, 0, 0, 1);
+}
