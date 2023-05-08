@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TileComponent } from 'src/app/shared-components/tile/tile.component';
 import { PrimaryButtonComponent } from '../../shared-components/primary-button/primary-button.component';
-import { DisplayEnvironmentComponent } from 'src/app/shared-components/display-environment/display-environment.component';
 import { RouterModule } from '@angular/router';
 
 
@@ -10,8 +9,7 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     TileComponent,
-    PrimaryButtonComponent,
-    DisplayEnvironmentComponent
+    PrimaryButtonComponent
   ],
   imports: [
     CommonModule,
@@ -19,8 +17,7 @@ import { RouterModule } from '@angular/router';
   ],
   exports: [
     TileComponent,
-    PrimaryButtonComponent,
-    DisplayEnvironmentComponent
+    PrimaryButtonComponent
   ]
 })
 export class SharedComponentsModule { }
