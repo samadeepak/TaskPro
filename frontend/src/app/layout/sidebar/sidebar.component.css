@@ -1,0 +1,105 @@
+:root {
+    --sidebar-icon-width: 50px;
+    --sidebar-label-size: 210px;
+    --sidebar-item-height: 50px;
+}
+
+:host {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    border-top: 1px solid var(--primary-border-dark);
+}
+
+.sidebar,
+.sidebar.active {
+    margin: 0;
+    padding: 0;
+    height: 100% !important;
+    border-right: 1px solid var(--primary-border);
+
+}
+
+.sidebar {
+    width: 54px;
+    /* width: var(--sidebar-icon-size); */
+    transition: all 0.9s ease;
+}
+
+.sidebar.active {
+    width: 210px;
+    transition: all 0.9s ease;
+}
+
+.sidebar .nav-links {
+    margin: 0;
+    padding: 0;
+    row-gap: 0;
+    height: 100% !important;
+    width: 100% !important;
+    display: grid;
+    grid-template-rows: 54px 54px 1fr 54px;
+}
+
+.sidebar .nav-links li {
+    list-style: none;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid var(--primary-border-light);
+}
+
+.sidebar .nav-links li a,
+.sidebar .nav-links li a:active {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 54px 1fr;
+    text-decoration: none;
+    color: var(--text-color-primary);
+    color: var(--primary-color-dark);
+    cursor: pointer;
+}
+
+.sidebar.active .nav-links li a:active {
+    color: var(--text-color-secondary);
+}
+
+/* Common settings for icon */
+.sidebar .nav-links li a i,
+.sidebar .nav-links li a.active i,
+.sidebar.active .nav-links li a i,
+.sidebar.active .nav-links li a.active i {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 22px;
+    /* border-right: 1px solid var(--primary-color-light); */
+}
+
+.sidebar .nav-links li a.active i {
+    background: var(--primary-color-dark);
+    color: var(--text-color-secondary);
+    padding-top: 15px;
+}
+
+/* Common settings for icon */
+.sidebar .nav-links li a .links_name,
+.sidebar .nav-links li a.active .links_name,
+.sidebar.active .nav-links li a .links_name,
+.sidebar.active .nav-links li a.active .links_name {
+    color: var(--text-color-primary);
+    color: var(--primary-color-dark);
+    margin-left: 0;
+    padding-left: 10px;
+    padding-top: 15px;
+    transition: all 0.9s ease;
+}
+
+.sidebar .nav-links li a .links_name,
+.sidebar .nav-links li a.active .links_name {
+    margin-left: -264px;
+    transition: all 0.9s ease;
+}

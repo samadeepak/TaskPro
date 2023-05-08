@@ -1,0 +1,19 @@
+.primary-button {
+    border: 1px solid var(--primary-color-dark) !important;
+    background: var(--primary-color-dark);
+    color: rgba(255, 255, 255, 1);
+    /* width: 200px; */
+    cursor: pointer;
+    width: 100%;
+    margin: auto;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 4px;
+    line-height: 1.3em;
+    letter-spacing: .06em;
+}
+
+.primary-button:hover {
+    background: rgba(0, 144, 1, 1);
+}

@@ -1,0 +1,55 @@
+:root {
+    --body-color: #;
+    --sidebar-color: rgba(255, 255, 255, .9);
+    --primary-color: rgba(148, 191, 16, 1);
+    --secondary-color: rgba(255, 255, 255, 1);
+    --primary-color-light: rgba(156, 180, 48, .8);
+    --primary-color-dark: rgba(156, 178, 48, 1);
+    --primary-color-dark: rgba(156, 185, 48, 1);
+    --primary-color-dark: rgba(44, 50, 74, .6);
+    --toggle-color: rgba(156, 185, 48, 1);
+    --text-color: #;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    overflow: scroll;
+}
+
+.page-wrapper .sidebar {
+    flex: 1;
+}
+
+.page-wrapper .page-content {
+    flex: 3;
+    padding: 10px;
+    background-color: #eed;
+    /* margin-bottom: 100px; */
+}
+
+.submit-button {
+    background-color: var(--primary-color);
+}
