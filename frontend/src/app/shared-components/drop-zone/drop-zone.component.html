@@ -1,0 +1,5 @@
+<div (dragover)="onDragOver($event)" (drop)="onDrop($event)">
+    <ng-content></ng-content>
+    <div *ngIf="isDragging" class="drag-indicator">Drop Here</div>
+    <div *ngFor="let item of droppedItems" class="dropped-item">{{ item }}</div>
+</div>

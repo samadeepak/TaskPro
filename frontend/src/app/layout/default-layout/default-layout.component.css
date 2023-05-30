@@ -58,7 +58,8 @@ body {
 
 .page-wrapper .page-container .content-wrapper {
     flex: 3;
-    padding: 10px;
+    /* padding: 10px; */
     background-color: var(--primary-color-light);
     margin: 0 !important;
+    overflow:hidden;
 }

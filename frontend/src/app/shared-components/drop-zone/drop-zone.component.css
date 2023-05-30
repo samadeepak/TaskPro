@@ -1,0 +1,17 @@
+div {
+    border: 2px dashed #ccc;
+    padding: 20px;
+}
+
+.drag-indicator {
+    background-color: #f0f0f0;
+    border: 1px dashed #999;
+    padding: 10px;
+    text-align: center;
+}
+
+.dropped-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-top: 10px;
+}

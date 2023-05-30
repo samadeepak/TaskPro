@@ -14,7 +14,11 @@ for directory in directories:
 FLASK_STATIC_PATH = os.path.join(CURRENT_DIRECTORY, 'static')
 FLASK_TEMPLATES_PATH = os.path.join(CURRENT_DIRECTORY, 'templates')
 
-subprocess.call(('cd ' + ANGULAR_PROJECT_PATH + ' && ng build --watch --base-href /static/ &'), shell=True)
+# start the process in the background
+process = subprocess.call(('cd ' + ANGULAR_PROJECT_PATH + ' && ng build --watch --base-href /static/ &'), shell=True)
+
+# get the process ID
+pid = process.pid
 
 dir_exists = True
 

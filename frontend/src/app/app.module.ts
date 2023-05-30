@@ -16,7 +16,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     DefaultLayoutComponent,
-    DashboardComponent,
+    DashboardComponent
   ],
   imports: [
     CommonModule,

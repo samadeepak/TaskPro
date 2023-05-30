@@ -3,11 +3,14 @@
     padding: 0;
 }
 .navbar-brand .logo {
+    width: 150px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
     text-transform: capitalize;
     font-style: italic;
+    color: rgba(44, 50, 74, .8);
 }
+
 .navbar-brand .logo  .logo-highlight{
     color: red;
 }

@@ -1,0 +1,39 @@
+.drag-zone-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.draggableItems {
+    flex: 1;
+    display: flex;
+    /* border: 1px dashed gray; */
+    flex-direction: row;
+    padding: 10px;
+    gap: 5px;
+}
+
+.app-draggable,
+.app-dropped-item {
+    padding: 5px 10px;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.droppableItems {
+    flex: 1;
+    /* border: 1px dashed gray;
+    padding: 5px;
+    min-height: 50px; */
+}
+
+.app-droppable {
+    border: 1px dashed gray;
+    padding: 5px;
+    min-height: 50px;
+}
+
+.app-droppable-target {
+    border: 1px dashed red;
+}
+
+.app-dropped-item {}

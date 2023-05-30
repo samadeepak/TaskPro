@@ -1,0 +1,64 @@
+<!-- <div class="flow-editor">
+    <div class="pannel">
+        <app-canvas [name]='"pannel"' [width]="pannelWidth" [height]="pannelHeight"></app-canvas>
+    </div>
+    <div class="editor">
+        <app-canvas [name]='"editor"' [width]="canvasWidth" [height]="canvasHeight"></app-canvas>
+    </div>
+</div> -->
+<!-- 
+<div class="drag-zone-wrapper">
+    <app-draggable-item [item]="'Item 1'">
+    </app-draggable-item>
+    <app-draggable-item [item]="'Item 2'">
+    </app-draggable-item>
+</div>
+
+
+<app-drop-zone>
+    <div>Drop Zone</div>
+</app-drop-zone> -->
+
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <div style="text-align:center;width: 400px;">
+  <h1>
+    Drag and Drop
+  </h1>
+  <ng-container *ngFor="let dropZone of droppableObjects; let i = index;">
+    <div [appDroppable]="dropZone"
+         (onDroppableComplete)="onZoneDrop($event)">
+       <ng-container *ngFor="let draggableElement of draggableObjects[i]; let j = index;">
+         <div [appDraggable]="draggableElement">
+            {{draggableElement.data.name}}
+         </div>
+       </ng-container>
+    </div>
+  </ng-container>
+</div> -->
+<div class="demo-wrapper">
+    <h1>
+        Drag and Drop
+    </h1>
+
+    <div class="draggableItems">
+        <ng-container *ngFor="let draggableElement of draggableObjects;">
+            <div [appDraggable]="draggableElement">
+                {{draggableElement.data.name}}
+            </div>
+        </ng-container>
+    </div>
+    <div class="droppableZone">
+        <ng-container *ngFor="let droppableZone of droppableZones;">
+            <div [appDroppable]="droppableZone">
+                {{droppableZone.zone}}
+            </div>
+        </ng-container>
+    </div>
+    <!-- <div class="droppableItems" [appDroppable]="droppableElement">
+        Drop Here
+    </div> -->
+</div>
+
+
+<!-- https://research.protocol.ai/blog/2021/designing-a-dataflow-editor-with-typescript-and-react/#high-quality-react-and-typescript-integration -->
+<!-- https://github.com/joeltg/react-dataflow-editor/blob/main/src/utils.ts -->
